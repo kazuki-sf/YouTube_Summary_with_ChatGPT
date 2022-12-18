@@ -26,7 +26,7 @@ npm run build-release
 
 ## How to Use
 
-To use YouTube Summary with ChatGPT extension, follow these steps:
+To use YouTube Summary with ChatGPT extension, follow these steps (or [watch this video](https://www.youtube.com/watch?v=pNxsdLif2cs)):
 
 1. Go to any YouTube videos.
 2. Click the small box on the right top that says `Transcript & Summary`.
