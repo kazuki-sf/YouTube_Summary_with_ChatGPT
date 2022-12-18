@@ -1,0 +1,158 @@
+.yt_ai_summary_container {
+    background-color: #FFFFFF;
+    padding: 4px 8px 4px 12px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.yt_ai_summary_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.yt_ai_summary_header_actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.yt_ai_summary_loading {
+    animation: rotation 0.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.yt_ai_summary_header_action_btn {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.yt_ai_summary_header_hover_label {
+    position: relative;
+    top: 6px;
+    left: -35px;
+    padding: 5px 8px;
+    background-color: #030303;
+    color: white;
+    width: fit-content;
+    border-radius: 3px;
+    opacity: 0.85;
+    white-space: nowrap;
+    font-size: 11px;
+    text-align: center;
+    user-select: none;
+}
+
+.yt_ai_summary_icon:hover {
+    background: rgb(32 225 86 / 30%) !important;
+}
+
+.yt_ai_summary_icon:active {
+    background: rgb(32 225 86 / 60%) !important;
+}
+
+.yt_ai_summary_header_action_btn:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1) 0s;
+}
+
+.yt_ai_summary_header_action_btn:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1) 0s;
+}
+
+#yt_ai_summary_header_copy, #yt_ai_summary_header_track, #yt_ai_summary_header_summary, #yt_ai_summary_header_track {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.yt_ai_summary_header_icon_show {
+    /* visibility: visible !important; */
+    display: block !important;
+}
+
+.yt_ai_summary_header_toggle_rotate {
+    transform: rotate(180deg);
+}
+
+.yt_ai_summary_body {
+    display: none;
+    overflow: scroll;
+    margin: 4px 0;
+    padding-top: 8px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.yt_ai_summary_body_show {
+    display: block;
+}
+
+.yt_ai_summary_text {
+    padding: 12px;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.yt_ai_summary_lang_select {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    overflow: scroll;
+    padding-bottom: 8px;
+}
+
+.yt_ai_summary_lang_select button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 24px;
+    padding: 8px 12px;
+    border: 0.3px solid rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.05);
+    white-space: nowrap;
+    min-width: fit-content;
+    cursor: pointer;
+    user-select: none;
+}
+
+.yt_ai_summary_lang_select button:hover {
+    background-color: rgba(0,0,0,0.1);
+    transition: background-color 0.5s cubic-bezier(0.05,0,0,1);
+}
+
+.yt_ai_summary_lange_selected {
+    background-color: #030303 !important;
+    color: white;
+}
+
+.yt_ai_summary_transcript_text_segment {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    gap: 0;
+    margin: 0 0 16px;
+    grid-template-columns: auto auto;
+}
+
+.yt_ai_summary_transcript_text_timestamp {
+    color:#065fd4;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 16px;
+}
