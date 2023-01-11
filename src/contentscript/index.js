@@ -28,6 +28,17 @@ window.onload = async () => {
     if (window.location.hostname === "chat.openai.com") {
         if (document.getElementsByTagName("textarea")[0]) {
             document.getElementsByTagName("textarea")[0].focus();
+            // If search query is "?ref=glasp"
+            if (window.location.search === "?ref=glasp") {
+                // get prompt from background.js
+                chrome.runtime.sendMessage({ message: "getPrompt" }, (response) => {
+                    document.getElementsByTagName("textarea")[0].value = response.prompt;
+                    if (response.prompt !== "") {
+                        document.getElementsByTagName("textarea")[0].focus();
+                        document.getElementsByTagName("button")[document.getElementsByTagName("button").length-1].click();
+                    }
+                });
+            }
         }
     }
     

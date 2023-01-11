@@ -60,7 +60,7 @@ const config = {
     devtool: "cheap-module-source-map",
     mode: process.env.NODE_ENV || "development",
     entry: {
-        'contentscript/content': path.join(__dirname, "src", "contentscript", "content.js"),
+        'contentscript/index': path.join(__dirname, "src", "contentscript", "index.js"),
         'background': path.join(__dirname, "background.js"),
     },
     output: {

@@ -1,6 +1,6 @@
 {
   "name": "YouTube Summary with ChatGPT",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "manifest_version": 3,
   "description": "Use ChatGPT to summarize YouTube videos",
   "background": {
@@ -15,7 +15,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*", "https://chat.openai.com/*"],
-      "js": ["contentscript/content.bundle.js"],
+      "js": ["contentscript/index.bundle.js"],
       "css": ["contentscript/yt_ai_summary.css"],
       "all_frames": false
     }
